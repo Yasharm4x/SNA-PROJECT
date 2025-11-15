@@ -1,0 +1,1001 @@
+source,target,connection_type,strength
+52,146,Best Friends,7
+10,73,Friends,7
+154,100,Teammates,8
+79,5,Classmates,9
+125,114,Classmates,10
+110,126,Classmates,7
+67,59,Best Friends,10
+180,78,Friends,10
+151,165,Classmates,7
+145,140,Project Partners,7
+180,170,Mutuals,9
+114,115,Teammates,8
+46,65,Teammates,8
+179,25,Friends,9
+74,22,Best Friends,9
+154,13,Teammates,7
+90,1,Classmates,7
+5,119,Friends,10
+6,78,Classmates,9
+27,169,Project Partners,10
+132,117,Teammates,10
+41,109,Mutuals,7
+15,79,Classmates,7
+66,67,Project Partners,8
+130,127,Classmates,8
+9,153,Best Friends,7
+165,174,Mutuals,10
+146,182,Mutuals,9
+54,73,Friends,7
+118,99,Classmates,7
+67,52,Best Friends,10
+40,175,Classmates,8
+132,99,Best Friends,10
+69,9,Friends,8
+98,44,Mutuals,10
+95,30,Best Friends,8
+114,130,Friends,10
+80,77,Friends,9
+135,177,Friends,8
+177,95,Friends,10
+94,29,Mutuals,9
+114,84,Best Friends,7
+137,71,Classmates,7
+121,26,Mutuals,10
+41,155,Mutuals,9
+30,142,Classmates,8
+7,10,Teammates,7
+133,107,Project Partners,7
+134,63,Classmates,7
+153,173,Classmates,10
+29,31,Mutuals,8
+43,53,Teammates,9
+34,30,Teammates,10
+38,28,Teammates,9
+35,142,Friends,7
+55,125,Project Partners,7
+7,163,Project Partners,10
+75,157,Teammates,7
+124,109,Project Partners,7
+141,162,Best Friends,7
+91,100,Friends,10
+64,62,Teammates,10
+4,149,Classmates,7
+70,18,Friends,10
+50,40,Project Partners,7
+101,75,Project Partners,8
+119,91,Friends,9
+156,123,Project Partners,10
+154,173,Project Partners,7
+20,66,Best Friends,8
+97,142,Classmates,8
+42,63,Mutuals,8
+39,160,Teammates,10
+45,65,Best Friends,9
+27,125,Classmates,10
+109,111,Mutuals,8
+162,35,Friends,7
+75,16,Best Friends,9
+83,35,Project Partners,8
+12,87,Teammates,10
+86,76,Best Friends,9
+163,159,Teammates,8
+155,70,Best Friends,7
+8,145,Project Partners,9
+162,151,Classmates,9
+28,137,Best Friends,10
+138,114,Friends,9
+87,117,Project Partners,9
+182,158,Teammates,9
+160,19,Friends,10
+167,178,Teammates,10
+71,52,Friends,9
+15,129,Teammates,9
+143,179,Mutuals,7
+176,173,Teammates,9
+73,17,Project Partners,10
+95,120,Friends,8
+131,23,Classmates,8
+174,38,Mutuals,10
+127,56,Mutuals,8
+159,142,Best Friends,9
+132,131,Mutuals,7
+27,28,Teammates,7
+123,81,Friends,8
+42,21,Project Partners,9
+144,48,Project Partners,10
+59,175,Best Friends,7
+43,141,Project Partners,7
+154,164,Friends,7
+160,22,Project Partners,7
+4,139,Classmates,9
+168,49,Friends,9
+111,122,Mutuals,8
+98,94,Classmates,10
+123,41,Classmates,10
+8,105,Classmates,9
+150,52,Teammates,9
+34,175,Best Friends,10
+55,87,Best Friends,8
+57,33,Classmates,9
+78,89,Mutuals,7
+17,171,Classmates,8
+68,96,Mutuals,10
+131,95,Teammates,9
+61,181,Teammates,7
+87,94,Best Friends,7
+31,183,Best Friends,8
+159,163,Best Friends,9
+182,130,Mutuals,7
+67,81,Classmates,8
+152,171,Project Partners,8
+137,103,Best Friends,10
+125,127,Friends,9
+111,98,Project Partners,7
+138,84,Mutuals,10
+6,149,Teammates,10
+174,115,Best Friends,9
+31,44,Project Partners,8
+149,8,Friends,7
+92,95,Mutuals,7
+14,117,Project Partners,7
+36,161,Friends,7
+121,90,Classmates,9
+141,180,Friends,7
+62,49,Classmates,7
+51,136,Project Partners,7
+135,23,Mutuals,9
+134,4,Best Friends,10
+10,169,Best Friends,9
+58,132,Friends,9
+170,59,Teammates,8
+171,98,Classmates,7
+130,25,Teammates,8
+37,138,Teammates,8
+31,90,Project Partners,7
+3,160,Friends,7
+78,67,Friends,9
+43,160,Best Friends,9
+21,43,Friends,7
+119,140,Classmates,10
+94,83,Project Partners,10
+128,120,Project Partners,8
+32,85,Best Friends,8
+166,154,Mutuals,9
+97,123,Project Partners,8
+73,9,Project Partners,10
+24,158,Mutuals,7
+178,43,Project Partners,8
+150,175,Teammates,7
+61,64,Friends,10
+49,83,Best Friends,9
+181,9,Mutuals,8
+109,142,Project Partners,10
+125,153,Project Partners,9
+21,41,Teammates,9
+80,130,Friends,7
+57,153,Teammates,10
+7,60,Mutuals,7
+119,155,Best Friends,7
+58,145,Mutuals,10
+45,131,Friends,7
+6,92,Friends,7
+92,83,Teammates,8
+146,169,Best Friends,7
+179,93,Best Friends,8
+117,110,Teammates,8
+12,71,Project Partners,9
+126,107,Best Friends,8
+131,44,Teammates,10
+13,166,Mutuals,7
+41,181,Friends,9
+129,128,Teammates,8
+25,120,Classmates,9
+48,73,Friends,10
+113,117,Mutuals,10
+56,65,Project Partners,8
+157,16,Mutuals,7
+87,157,Best Friends,9
+15,20,Classmates,8
+114,22,Mutuals,8
+133,115,Teammates,7
+176,144,Mutuals,7
+175,70,Friends,8
+144,3,Teammates,7
+28,24,Mutuals,10
+125,95,Teammates,9
+112,174,Project Partners,8
+101,138,Classmates,10
+166,167,Mutuals,10
+94,40,Best Friends,10
+26,131,Friends,8
+5,76,Friends,7
+163,156,Teammates,7
+58,15,Teammates,10
+121,91,Teammates,7
+126,51,Friends,10
+145,75,Best Friends,10
+74,14,Project Partners,8
+58,125,Mutuals,7
+119,112,Project Partners,7
+63,5,Project Partners,8
+158,165,Mutuals,7
+113,128,Teammates,9
+19,66,Friends,8
+108,126,Teammates,7
+129,127,Best Friends,9
+132,46,Teammates,9
+51,159,Mutuals,9
+138,183,Teammates,7
+71,72,Classmates,9
+95,93,Teammates,8
+40,109,Project Partners,9
+147,156,Friends,8
+91,117,Mutuals,10
+22,129,Classmates,10
+84,153,Friends,7
+39,181,Classmates,9
+86,53,Teammates,7
+8,86,Project Partners,9
+85,50,Best Friends,10
+105,26,Teammates,8
+111,26,Friends,10
+113,123,Teammates,7
+109,16,Project Partners,10
+31,27,Mutuals,9
+104,90,Classmates,7
+111,90,Friends,10
+90,117,Friends,9
+23,51,Friends,7
+54,137,Mutuals,7
+117,94,Teammates,7
+65,44,Teammates,7
+107,176,Teammates,10
+31,163,Project Partners,10
+68,79,Best Friends,7
+25,67,Classmates,10
+58,72,Best Friends,9
+150,50,Project Partners,7
+50,16,Friends,7
+41,174,Mutuals,8
+124,106,Classmates,10
+153,172,Teammates,7
+182,96,Friends,7
+127,109,Teammates,8
+152,156,Project Partners,7
+157,22,Classmates,7
+65,80,Best Friends,9
+44,161,Best Friends,10
+164,96,Best Friends,10
+68,180,Mutuals,10
+172,65,Classmates,8
+127,47,Best Friends,9
+165,22,Friends,10
+124,26,Friends,9
+125,141,Project Partners,7
+72,13,Classmates,10
+120,115,Friends,9
+144,65,Mutuals,10
+103,74,Classmates,8
+27,160,Mutuals,10
+73,114,Mutuals,10
+120,23,Mutuals,7
+178,113,Best Friends,9
+52,86,Teammates,9
+59,79,Mutuals,7
+24,85,Best Friends,10
+138,169,Classmates,9
+49,70,Classmates,7
+97,51,Teammates,8
+7,183,Classmates,10
+76,140,Mutuals,9
+88,152,Teammates,9
+51,22,Mutuals,8
+166,14,Classmates,7
+147,24,Mutuals,8
+104,134,Best Friends,10
+150,128,Friends,8
+49,60,Friends,9
+128,104,Classmates,9
+158,2,Project Partners,9
+154,126,Friends,10
+143,95,Project Partners,7
+101,122,Best Friends,9
+87,182,Friends,9
+26,104,Project Partners,8
+119,116,Teammates,8
+23,127,Best Friends,8
+159,89,Mutuals,10
+156,31,Classmates,7
+10,165,Classmates,10
+173,82,Classmates,9
+114,111,Classmates,10
+143,83,Teammates,10
+13,168,Friends,9
+157,32,Project Partners,10
+176,172,Project Partners,9
+122,123,Teammates,7
+151,182,Friends,10
+156,36,Classmates,9
+81,14,Project Partners,10
+36,138,Best Friends,8
+73,138,Teammates,7
+153,148,Project Partners,9
+66,165,Best Friends,7
+70,85,Mutuals,7
+136,55,Teammates,8
+120,91,Teammates,9
+42,17,Best Friends,7
+182,78,Friends,9
+183,158,Classmates,7
+71,153,Best Friends,10
+132,100,Project Partners,9
+123,127,Teammates,7
+62,134,Classmates,10
+112,96,Classmates,8
+105,114,Classmates,8
+142,157,Classmates,10
+104,136,Mutuals,8
+85,173,Mutuals,9
+170,79,Mutuals,10
+55,165,Classmates,10
+29,172,Project Partners,9
+38,40,Mutuals,7
+134,29,Teammates,9
+51,16,Mutuals,7
+141,35,Friends,10
+98,96,Teammates,9
+131,98,Project Partners,10
+41,22,Friends,9
+73,89,Friends,8
+11,72,Friends,7
+174,183,Best Friends,10
+30,101,Teammates,10
+32,45,Classmates,7
+181,123,Classmates,8
+148,156,Best Friends,7
+139,22,Friends,10
+68,154,Friends,7
+52,94,Teammates,8
+91,134,Project Partners,10
+25,160,Teammates,8
+14,80,Classmates,9
+70,1,Friends,8
+178,37,Friends,7
+21,87,Project Partners,8
+66,47,Friends,10
+44,43,Project Partners,8
+146,178,Mutuals,9
+3,35,Mutuals,8
+122,161,Best Friends,8
+32,9,Project Partners,8
+107,44,Teammates,9
+142,179,Friends,9
+148,143,Teammates,10
+5,136,Friends,7
+168,161,Mutuals,8
+24,27,Project Partners,8
+134,164,Teammates,8
+63,17,Classmates,10
+141,34,Best Friends,8
+152,182,Classmates,7
+150,167,Teammates,7
+164,29,Mutuals,7
+157,163,Friends,10
+22,123,Best Friends,8
+52,19,Classmates,8
+116,96,Mutuals,10
+164,38,Project Partners,7
+172,161,Project Partners,7
+90,59,Friends,9
+157,15,Best Friends,8
+10,157,Mutuals,7
+83,96,Best Friends,8
+6,31,Project Partners,10
+162,147,Project Partners,10
+18,25,Classmates,8
+50,125,Best Friends,10
+171,57,Classmates,9
+50,1,Teammates,8
+149,144,Friends,10
+179,9,Mutuals,8
+165,106,Mutuals,9
+181,26,Classmates,7
+63,134,Project Partners,9
+21,34,Teammates,10
+50,16,Best Friends,8
+154,153,Classmates,9
+131,159,Mutuals,9
+63,17,Teammates,10
+178,67,Teammates,10
+42,88,Best Friends,9
+146,154,Mutuals,8
+148,31,Friends,7
+40,61,Teammates,8
+180,73,Mutuals,8
+86,55,Mutuals,10
+81,43,Friends,10
+160,118,Mutuals,8
+74,58,Project Partners,8
+69,4,Project Partners,9
+78,37,Best Friends,8
+28,135,Mutuals,9
+110,180,Project Partners,8
+110,107,Mutuals,8
+76,175,Friends,7
+95,31,Best Friends,7
+110,79,Best Friends,8
+85,137,Classmates,7
+174,88,Project Partners,7
+163,167,Teammates,9
+36,89,Mutuals,10
+51,62,Classmates,9
+109,18,Mutuals,9
+47,102,Classmates,7
+50,151,Project Partners,7
+43,155,Classmates,9
+7,37,Teammates,10
+144,7,Friends,7
+72,73,Best Friends,7
+154,75,Best Friends,10
+36,163,Mutuals,8
+114,91,Project Partners,7
+152,151,Best Friends,9
+13,125,Teammates,8
+57,50,Teammates,10
+86,36,Project Partners,8
+12,75,Best Friends,8
+57,39,Project Partners,7
+139,173,Teammates,7
+169,147,Teammates,10
+30,77,Classmates,8
+124,137,Project Partners,9
+34,44,Classmates,9
+85,154,Classmates,9
+142,115,Mutuals,8
+86,44,Project Partners,10
+126,64,Teammates,9
+44,139,Best Friends,7
+32,123,Mutuals,7
+177,156,Teammates,9
+138,94,Teammates,7
+15,179,Classmates,10
+38,9,Mutuals,8
+33,158,Mutuals,9
+107,28,Teammates,7
+180,35,Friends,9
+60,46,Best Friends,9
+41,45,Mutuals,9
+151,45,Teammates,9
+20,131,Mutuals,8
+104,99,Mutuals,7
+148,168,Classmates,7
+161,170,Mutuals,7
+174,108,Teammates,8
+24,4,Best Friends,8
+74,129,Project Partners,8
+78,73,Teammates,7
+17,139,Teammates,9
+134,103,Teammates,7
+175,56,Project Partners,9
+80,181,Teammates,8
+147,33,Mutuals,8
+85,12,Mutuals,10
+145,132,Classmates,7
+181,77,Friends,10
+23,130,Classmates,10
+110,66,Mutuals,9
+151,138,Friends,8
+125,23,Project Partners,7
+89,46,Teammates,10
+160,147,Mutuals,10
+2,116,Best Friends,9
+17,86,Mutuals,10
+89,15,Friends,8
+32,166,Friends,8
+34,176,Teammates,8
+75,12,Project Partners,8
+33,17,Classmates,9
+65,69,Classmates,7
+73,94,Classmates,8
+127,55,Project Partners,8
+140,108,Mutuals,10
+133,36,Friends,10
+15,17,Mutuals,10
+71,38,Mutuals,10
+39,73,Best Friends,9
+38,43,Project Partners,10
+84,15,Classmates,10
+142,143,Friends,9
+69,133,Best Friends,10
+16,14,Best Friends,8
+113,57,Project Partners,9
+63,19,Project Partners,7
+81,78,Teammates,8
+182,71,Friends,10
+19,99,Classmates,8
+171,69,Friends,7
+165,130,Best Friends,9
+23,35,Best Friends,8
+166,150,Best Friends,7
+63,18,Classmates,9
+49,46,Best Friends,7
+12,69,Mutuals,9
+71,48,Mutuals,8
+19,116,Mutuals,8
+50,59,Mutuals,10
+108,93,Classmates,7
+57,135,Teammates,9
+75,64,Mutuals,10
+157,122,Best Friends,10
+116,12,Teammates,8
+54,92,Classmates,9
+21,19,Teammates,9
+45,17,Teammates,8
+159,59,Best Friends,7
+79,23,Classmates,8
+179,130,Classmates,8
+96,161,Friends,10
+70,146,Best Friends,10
+142,10,Teammates,8
+167,31,Classmates,10
+97,32,Teammates,9
+92,124,Teammates,7
+81,60,Friends,9
+33,13,Classmates,10
+66,59,Project Partners,8
+135,118,Best Friends,10
+11,64,Project Partners,8
+121,133,Mutuals,10
+130,166,Friends,8
+102,110,Classmates,7
+82,168,Mutuals,10
+171,172,Best Friends,10
+120,132,Classmates,7
+118,159,Teammates,8
+33,176,Classmates,7
+174,45,Best Friends,9
+174,175,Best Friends,8
+41,74,Best Friends,10
+69,43,Mutuals,8
+174,144,Teammates,9
+86,78,Project Partners,7
+103,134,Teammates,10
+127,12,Mutuals,10
+55,155,Project Partners,8
+43,89,Best Friends,10
+39,170,Mutuals,9
+136,79,Best Friends,9
+163,22,Best Friends,10
+103,164,Mutuals,7
+171,151,Project Partners,9
+69,130,Classmates,7
+38,108,Best Friends,7
+37,175,Mutuals,7
+143,139,Project Partners,10
+119,104,Project Partners,7
+2,115,Project Partners,7
+20,87,Friends,8
+30,149,Classmates,10
+102,104,Mutuals,8
+107,94,Best Friends,8
+98,107,Classmates,8
+16,136,Teammates,10
+65,156,Friends,10
+163,151,Project Partners,7
+177,122,Teammates,8
+139,66,Best Friends,10
+66,81,Best Friends,10
+16,56,Mutuals,9
+162,16,Friends,10
+108,39,Friends,7
+26,148,Classmates,9
+144,154,Project Partners,8
+49,59,Best Friends,10
+38,110,Mutuals,8
+34,99,Friends,9
+133,156,Teammates,10
+155,59,Best Friends,9
+130,111,Mutuals,9
+171,105,Teammates,7
+118,129,Mutuals,9
+177,11,Classmates,9
+68,28,Project Partners,7
+59,77,Teammates,8
+106,123,Teammates,9
+1,86,Teammates,7
+92,146,Project Partners,8
+56,90,Project Partners,8
+38,7,Best Friends,9
+1,111,Mutuals,9
+121,84,Best Friends,10
+65,88,Mutuals,9
+181,60,Best Friends,9
+6,72,Best Friends,8
+65,16,Best Friends,10
+28,111,Teammates,7
+16,57,Classmates,10
+147,79,Project Partners,8
+74,168,Project Partners,7
+177,84,Best Friends,9
+88,11,Best Friends,9
+171,133,Classmates,7
+168,137,Best Friends,7
+69,53,Best Friends,10
+181,42,Mutuals,8
+97,125,Teammates,7
+171,108,Mutuals,9
+44,35,Friends,7
+36,102,Project Partners,7
+53,69,Teammates,9
+37,28,Best Friends,9
+99,131,Best Friends,8
+98,95,Project Partners,7
+161,133,Friends,9
+50,181,Friends,8
+66,65,Teammates,9
+71,78,Friends,10
+146,73,Project Partners,8
+80,19,Classmates,7
+95,109,Project Partners,9
+151,39,Classmates,9
+77,40,Teammates,7
+26,138,Project Partners,7
+176,40,Classmates,7
+100,70,Project Partners,10
+122,121,Classmates,9
+102,87,Best Friends,10
+8,61,Classmates,10
+46,43,Best Friends,7
+69,150,Best Friends,7
+156,160,Best Friends,8
+24,127,Best Friends,9
+143,123,Teammates,8
+169,34,Project Partners,10
+64,46,Friends,8
+89,47,Best Friends,8
+97,50,Classmates,9
+11,19,Classmates,8
+166,97,Best Friends,9
+31,41,Mutuals,8
+113,94,Teammates,9
+82,22,Teammates,8
+167,131,Teammates,9
+75,84,Friends,10
+126,130,Mutuals,10
+172,46,Friends,10
+123,82,Classmates,10
+31,123,Mutuals,10
+167,109,Project Partners,8
+42,102,Classmates,9
+74,58,Mutuals,8
+1,127,Friends,8
+2,101,Friends,7
+36,83,Mutuals,9
+82,98,Teammates,8
+80,11,Project Partners,8
+117,122,Classmates,7
+181,83,Classmates,8
+25,59,Friends,8
+109,128,Classmates,8
+4,175,Project Partners,7
+132,123,Project Partners,10
+107,101,Project Partners,9
+133,41,Project Partners,10
+76,12,Project Partners,10
+96,118,Classmates,8
+130,66,Teammates,9
+75,125,Project Partners,8
+105,107,Best Friends,7
+29,24,Friends,9
+4,157,Teammates,9
+39,68,Project Partners,9
+68,18,Teammates,10
+6,103,Classmates,8
+13,3,Best Friends,9
+41,3,Teammates,8
+7,82,Best Friends,7
+116,2,Classmates,8
+25,111,Best Friends,9
+14,72,Teammates,8
+130,31,Classmates,7
+91,38,Teammates,10
+9,89,Best Friends,7
+96,170,Best Friends,10
+136,115,Friends,9
+6,142,Friends,9
+156,145,Mutuals,8
+62,91,Mutuals,7
+169,128,Teammates,10
+98,140,Friends,10
+107,163,Mutuals,9
+98,71,Teammates,7
+63,18,Best Friends,10
+154,143,Project Partners,8
+72,38,Classmates,7
+55,21,Best Friends,9
+101,125,Project Partners,8
+157,136,Teammates,9
+96,90,Classmates,10
+118,89,Friends,7
+7,98,Best Friends,7
+119,99,Teammates,9
+12,51,Teammates,10
+80,75,Best Friends,7
+169,65,Project Partners,7
+22,120,Best Friends,8
+32,157,Friends,10
+84,95,Mutuals,10
+42,166,Friends,10
+62,120,Best Friends,8
+100,173,Classmates,10
+144,54,Teammates,9
+21,12,Best Friends,7
+126,7,Mutuals,9
+13,85,Project Partners,9
+6,56,Project Partners,7
+113,104,Best Friends,8
+24,178,Classmates,9
+102,74,Teammates,8
+7,173,Best Friends,9
+65,59,Best Friends,9
+149,138,Friends,9
+111,22,Classmates,9
+106,93,Friends,9
+93,50,Project Partners,10
+21,175,Project Partners,8
+16,48,Friends,8
+121,24,Project Partners,7
+10,48,Project Partners,9
+150,183,Best Friends,7
+13,165,Friends,9
+64,21,Teammates,8
+92,178,Project Partners,9
+57,84,Classmates,10
+20,153,Friends,10
+28,106,Mutuals,8
+35,47,Friends,10
+53,78,Best Friends,8
+93,128,Teammates,7
+39,168,Classmates,8
+12,70,Friends,9
+94,37,Teammates,7
+89,178,Classmates,10
+104,18,Project Partners,7
+128,100,Best Friends,8
+12,50,Teammates,7
+52,42,Classmates,9
+9,40,Teammates,9
+166,170,Project Partners,8
+172,111,Friends,9
+168,30,Teammates,10
+34,154,Project Partners,10
+160,175,Classmates,9
+156,171,Mutuals,8
+161,138,Mutuals,8
+92,108,Mutuals,10
+88,12,Best Friends,7
+45,151,Teammates,9
+27,91,Best Friends,10
+154,40,Mutuals,7
+30,132,Best Friends,10
+35,33,Project Partners,8
+97,136,Mutuals,9
+14,57,Friends,8
+150,179,Best Friends,10
+81,25,Classmates,10
+28,133,Classmates,7
+134,69,Teammates,10
+183,103,Project Partners,8
+9,137,Best Friends,8
+12,19,Classmates,10
+168,56,Classmates,8
+5,63,Friends,10
+135,13,Project Partners,10
+54,86,Best Friends,10
+53,40,Teammates,8
+93,103,Classmates,10
+86,139,Best Friends,10
+153,36,Project Partners,10
+141,151,Friends,9
+146,173,Mutuals,9
+126,15,Best Friends,10
+10,119,Best Friends,8
+10,40,Friends,10
+103,15,Friends,10
+10,8,Project Partners,7
+55,77,Mutuals,7
+118,180,Classmates,8
+81,49,Teammates,8
+133,128,Best Friends,10
+132,127,Teammates,10
+52,57,Project Partners,10
+93,124,Teammates,9
+77,17,Teammates,9
+102,5,Mutuals,10
+112,73,Best Friends,7
+148,175,Teammates,10
+48,85,Mutuals,10
+161,179,Project Partners,7
+169,164,Friends,9
+123,166,Classmates,7
+13,84,Friends,10
+73,175,Classmates,8
+180,39,Best Friends,7
+83,115,Friends,10
+180,154,Teammates,8
+99,91,Teammates,8
+116,3,Classmates,8
+8,10,Classmates,10
+32,63,Mutuals,10
+94,102,Mutuals,7
+124,106,Friends,9
+27,113,Friends,9
+26,102,Teammates,9
+17,48,Best Friends,10
+172,22,Classmates,10
+43,109,Classmates,9
+153,156,Mutuals,10
+14,98,Project Partners,8
+141,88,Best Friends,7
+29,114,Classmates,9
+178,84,Classmates,8
+150,140,Best Friends,8
+110,119,Mutuals,10
+2,1,Mutuals,9
+54,152,Best Friends,7
+110,135,Teammates,7
+85,5,Mutuals,8
+29,148,Mutuals,8
+71,75,Mutuals,7
+45,65,Teammates,7
+119,84,Classmates,9
+149,9,Classmates,10
+66,84,Project Partners,9
+159,127,Project Partners,7
+104,95,Teammates,8
+55,178,Friends,9
+87,4,Classmates,8
+170,180,Best Friends,7
+17,21,Friends,8
+59,29,Best Friends,9
+134,55,Friends,9
+89,149,Mutuals,8
+170,152,Teammates,9
+88,73,Teammates,9
+64,23,Mutuals,8
+21,20,Best Friends,10
+178,8,Mutuals,7
+84,39,Best Friends,9
+117,39,Teammates,9
+172,31,Project Partners,9
+108,120,Best Friends,8
+111,92,Best Friends,9
+182,152,Project Partners,8
+2,84,Project Partners,9
+107,179,Friends,10
+80,22,Friends,10
+155,88,Classmates,9
+41,68,Friends,7
+94,135,Teammates,9
+88,19,Classmates,7
+38,12,Best Friends,7
+133,149,Friends,8
+157,36,Mutuals,8
+137,120,Teammates,7
+29,155,Friends,8
+109,97,Project Partners,10
+146,92,Mutuals,9
+43,80,Classmates,7
+181,156,Friends,10
+115,128,Mutuals,9
+17,19,Project Partners,9
+62,41,Friends,9
+140,119,Best Friends,10
+26,136,Best Friends,10
+138,180,Classmates,10
+176,174,Friends,9
+53,169,Classmates,10
+63,162,Project Partners,10
+149,176,Classmates,10
+26,99,Mutuals,7
+165,173,Best Friends,7
+26,48,Best Friends,7
+164,180,Teammates,7
+160,148,Mutuals,8
+25,113,Mutuals,7
+107,172,Teammates,10
+10,40,Best Friends,9
+17,67,Classmates,8
+98,130,Friends,9
+112,180,Friends,7
+113,97,Classmates,8
+80,87,Mutuals,7
+143,126,Best Friends,10
+66,25,Project Partners,9
+139,146,Best Friends,9
+16,21,Classmates,10
+136,134,Project Partners,10
+98,80,Teammates,9
+48,114,Teammates,7
+43,179,Friends,7
+60,86,Teammates,8
+146,123,Project Partners,10
+59,95,Mutuals,10
+165,140,Friends,7
+41,50,Friends,7
+45,143,Best Friends,7
+1,82,Friends,10
+42,144,Teammates,9
+107,125,Teammates,9
+99,65,Mutuals,8
+174,168,Project Partners,7
+56,49,Classmates,7
+158,140,Best Friends,7
+7,122,Classmates,7
+76,52,Best Friends,9
+161,165,Friends,9
+129,179,Mutuals,8
+146,78,Mutuals,8
+20,146,Friends,10
+54,106,Best Friends,8
+15,14,Teammates,10
+122,121,Project Partners,8
+63,79,Project Partners,8
+103,10,Teammates,7
+86,141,Classmates,8
+11,87,Classmates,7
+178,156,Best Friends,8
+21,154,Project Partners,7
+106,109,Classmates,8
+124,99,Teammates,10
+95,121,Mutuals,9
+49,59,Project Partners,8
+29,175,Teammates,8
+8,176,Friends,10
+97,91,Project Partners,10
+15,163,Friends,10
+34,145,Friends,8
+125,8,Best Friends,9
+38,180,Teammates,8
+180,161,Mutuals,8
+136,96,Mutuals,8
+59,111,Friends,8
+40,146,Project Partners,9
+100,32,Project Partners,8
+42,71,Best Friends,8
+59,75,Teammates,7
+171,177,Friends,10
+39,177,Project Partners,8
+50,66,Friends,9
+19,92,Teammates,10
+4,38,Friends,10
+62,118,Mutuals,9
+22,179,Classmates,10
+121,92,Mutuals,10
+168,3,Classmates,10
+114,101,Best Friends,8
+168,178,Classmates,8
+20,54,Classmates,7
+20,42,Classmates,10
+78,87,Mutuals,10
+20,31,Classmates,9
+62,68,Project Partners,7
+182,8,Best Friends,10
+146,35,Mutuals,10
+110,104,Friends,7
+58,64,Friends,9
+115,47,Classmates,7
+9,155,Mutuals,10
+155,112,Classmates,10
+70,1,Best Friends,10
+90,157,Teammates,10
+79,51,Classmates,10
+101,102,Teammates,9
+27,127,Classmates,8
+88,50,Best Friends,7
+25,38,Project Partners,8
+19,125,Best Friends,10
+16,88,Best Friends,10
+135,112,Classmates,7

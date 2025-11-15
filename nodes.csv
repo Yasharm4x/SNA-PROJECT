@@ -1,0 +1,184 @@
+id,name,reg_no,section,color,headline,skills,target
+1,Gun Goyal,229309003,A,#e74c3c,AI Research Enthusiast | NLP | Deep Learning,"Power BI, Data Visualization, R",AI Engineer
+2,Dhruv Dahiya,229309151,B,#2ecc71,Machine Learning Engineer in the Making,"Statistics, NLP, Excel",Data Scientist
+3,Trisha Sharma,229309215,C,#3498db,AI Research Enthusiast | NLP | Deep Learning,"Tableau, Data Mining, Data Visualization, Pandas",AI Engineer
+4,Sushpreet Kaur,228309220,C,#3498db,Exploring Deep Learning & Computer Vision,"Statistics, Machine Learning, Data Visualization",AI Engineer
+5,Rashi Makadia,229309945,A,#e74c3c,Machine Learning Engineer in the Making,"PyTorch, TensorFlow, Data Mining, Big Data",AI Engineer
+6,Sujal Jain,229309038,A,#e74c3c,AI Research Enthusiast | NLP | Deep Learning,"NumPy, Python, Data Analysis",ML Engineer
+7,Arnav Sharma,229309255,C,#3498db,Passionate about Data-Driven Decision Making,"Excel, R, PyTorch, Tableau",BI Analyst
+8,Yash Sharma,229309194,C,#3498db,Exploring Deep Learning & Computer Vision,"Data Mining, NLP, AWS, TensorFlow, NumPy",ML Engineer
+9,Kunal Yadav,229309237,C,#3498db,Data Analyst | SQL | Tableau | Power BI,"Python, Statistics, Excel",Data Scientist
+10,Ayush Shashi,229309230,C,#3498db,Data Analyst | SQL | Tableau | Power BI,"AWS, Power BI, Data Mining, SQL",Data Analyst
+11,Kritika Khandelwal,229309011,A,#e74c3c,Data Science Undergraduate | Python | Statistics | ML,"Data Analysis, Big Data, Deep Learning, Statistics, Excel",Data Analyst
+12,Aman Sharma,229303072,A,#e74c3c,Exploring Deep Learning & Computer Vision,"PyTorch, NLP, Statistics, Data Mining",AI Engineer
+13,Ananya Agarwal,229309015,A,#e74c3c,Passionate about Data-Driven Decision Making,"Statistics, Computer Vision, NLP, PyTorch",BI Analyst
+14,Kriti Gupta,229309067,A,#e74c3c,Data Science Undergraduate | Python | Statistics | ML,"R, NumPy, PyTorch, Pandas",Research Associate
+15,Mithilesh S. Mudaliar,229309036,A,#e74c3c,Passionate about Data-Driven Decision Making,"Data Analysis, SQL, R, Pandas",ML Engineer
+16,Nandigala Jacinth Ruel Knox,229303289,A,#e74c3c,Future Business Intelligence Analyst | Excel | SQL | Tableau,"Tableau, Computer Vision, Deep Learning",Data Scientist
+17,Pavni Jain,229309039,A,#e74c3c,Data Analyst | SQL | Tableau | Power BI,"Deep Learning, Computer Vision, Python, Data Visualization, Machine Learning",AI Engineer
+18,Shashwat Singh,229303309,A,#e74c3c,AI Research Enthusiast | NLP | Deep Learning,"NLP, Computer Vision, R, Tableau, TensorFlow",Research Associate
+19,Siddharth Manish Sanghavi,229309014,A,#e74c3c,AI Research Enthusiast | NLP | Deep Learning,"Power BI, Computer Vision, PyTorch, Data Analysis",Data Scientist
+20,Varun,229303248,A,#e74c3c,AI & Data Enthusiast | Passionate about Predictive Modeling,"Big Data, PyTorch, Excel, AWS, Data Mining",Research Associate
+21,Shivansh Barthwal,229309061,A,#e74c3c,AI Research Enthusiast | NLP | Deep Learning,"Power BI, Deep Learning, Statistics",Research Associate
+22,Anindya Mishra,229309095,B,#2ecc71,Aspiring Data Scientist | Python & ML Enthusiast,"Python, Data Visualization, Statistics, Data Analysis",Data Analyst
+23,Aashi Sharma,229309087,B,#2ecc71,Passionate about Data-Driven Decision Making,"AWS, Data Visualization, Data Mining, Deep Learning, SQL",Data Analyst
+24,Aziz Barwaniwala,229309096,B,#2ecc71,Future Business Intelligence Analyst | Excel | SQL | Tableau,"R, NumPy, SQL, Python",Data Scientist
+25,Jashan Sood,229309154,B,#2ecc71,Transforming Data into Insights | ML & Analytics,"Big Data, Data Mining, Machine Learning",Research Associate
+26,Ragini Grover,229309180,B,#2ecc71,Data Analyst | SQL | Tableau | Power BI,"Python, Data Mining, Power BI",AI Engineer
+27,Rahul Tanwar,229309085,B,#2ecc71,Exploring Deep Learning & Computer Vision,"Deep Learning, NLP, Data Mining",BI Analyst
+28,Ridima Garg,229309120,B,#2ecc71,Data Analyst | SQL | Tableau | Power BI,"Deep Learning, Python, Pandas",Data Scientist
+29,Saksham Srivastava,229309136,B,#2ecc71,Transforming Data into Insights | ML & Analytics,"Data Analysis, Data Visualization, Excel",Data Scientist
+30,Ananya Manan,229309199,C,#3498db,Aspiring Data Scientist | Python & ML Enthusiast,"Data Analysis, NLP, Tableau, Data Visualization, NumPy",Data Scientist
+31,Dhondi Samrudh,229309222,C,#3498db,AI & Data Enthusiast | Passionate about Predictive Modeling,"AWS, Excel, Data Visualization",ML Engineer
+32,Divyansh Dhawan,229309244,C,#3498db,Data Science Undergraduate | Python | Statistics | ML,"Pandas, Excel, NLP",ML Engineer
+33,Divyansh Gupta,229309267,C,#3498db,Data Analyst | SQL | Tableau | Power BI,"Computer Vision, SQL, Power BI",Data Scientist
+34,Lochan Mangal,229309274,C,#3498db,Exploring Deep Learning & Computer Vision,"PyTorch, R, Excel",Data Analyst
+35,Mayank Vijay Chopra,229309229,C,#3498db,Aspiring Data Scientist | Python & ML Enthusiast,"AWS, R, Tableau, Big Data, Data Analysis",Research Associate
+36,Samriddhi Gupta,229309224,C,#3498db,Transforming Data into Insights | ML & Analytics,"AWS, PyTorch, Deep Learning, Data Visualization",ML Engineer
+37,Sharath Sudhakar Pv,229309190,C,#3498db,Transforming Data into Insights | ML & Analytics,"TensorFlow, Deep Learning, Big Data, Data Mining",Data Analyst
+38,Siddhant Shaw,229309235,C,#3498db,Transforming Data into Insights | ML & Analytics,"NLP, TensorFlow, SQL, NumPy, Statistics",BI Analyst
+39,Sreya Bhattacharya,229309217,C,#3498db,AI & Data Enthusiast | Passionate about Predictive Modeling,"Data Analysis, Pandas, SQL, Data Mining, Tableau",BI Analyst
+40,Yuvam Kothari,229309251,C,#3498db,Aspiring Data Scientist | Python & ML Enthusiast,"Deep Learning, Tableau, Data Analysis, SQL, Statistics",BI Analyst
+41,Neha L,229309262,C,#3498db,AI Research Enthusiast | NLP | Deep Learning,"PyTorch, Big Data, Statistics",Research Associate
+42,Srijan Sati,229309001,A,#e74c3c,Data Analyst | SQL | Tableau | Power BI,"Computer Vision, R, Tableau, Python, AWS",Data Analyst
+43,Tanishk Lakra,229309028,A,#e74c3c,Aspiring Data Scientist | Python & ML Enthusiast,"NumPy, PyTorch, Machine Learning, NLP",AI Engineer
+44,Eeshan Bablani,229309252,C,#3498db,AI & Data Enthusiast | Passionate about Predictive Modeling,"Tableau, PyTorch, Deep Learning",Data Analyst
+45,Tushar Garg,229309270,C,#3498db,Aspiring Data Scientist | Python & ML Enthusiast,"SQL, R, Power BI, Data Mining, Tableau",BI Analyst
+46,Stuti Garg,229309009,A,#e74c3c,Aspiring Data Scientist | Python & ML Enthusiast,"NumPy, Deep Learning, SQL",Data Scientist
+47,Bhavika Malik,229309112,B,#2ecc71,Passionate about Data-Driven Decision Making,"Data Mining, Data Analysis, Python",ML Engineer
+48,Abhas Anand,229303279,A,#e74c3c,Aspiring Data Scientist | Python & ML Enthusiast,"R, Data Mining, Machine Learning",BI Analyst
+49,Abhay Sharma,229303310,A,#e74c3c,AI Research Enthusiast | NLP | Deep Learning,"SQL, Big Data, Statistics, Data Mining",ML Engineer
+50,Abhimanyu Jaithalia,229309073,A,#e74c3c,AI & Data Enthusiast | Passionate about Predictive Modeling,"Python, Data Mining, Pandas, Deep Learning, AWS",AI Engineer
+51,Aditya Shukla,229209008,A,#e74c3c,AI & Data Enthusiast | Passionate about Predictive Modeling,"Data Visualization, NLP, AWS, Python",Data Analyst
+52,Amulya Dua,229309074,A,#e74c3c,Transforming Data into Insights | ML & Analytics,"Deep Learning, Python, SQL, Data Visualization",AI Engineer
+53,Arnav Jhamb,229309025,A,#e74c3c,Transforming Data into Insights | ML & Analytics,"NumPy, Computer Vision, Pandas, NLP",ML Engineer
+54,Daksh Jain,229309013,A,#e74c3c,Aspiring Data Scientist | Python & ML Enthusiast,"Data Visualization, Tableau, SQL",BI Analyst
+55,Kartik Dubey,229303040,A,#e74c3c,Machine Learning Engineer in the Making,"Power BI, Data Visualization, AWS",Research Associate
+56,Pranav Banker,229309070,A,#e74c3c,Machine Learning Engineer in the Making,"Data Analysis, NumPy, R, Computer Vision",ML Engineer
+57,Rahul Trivedi,229309068,A,#e74c3c,Data Science Undergraduate | Python | Statistics | ML,"Pandas, NumPy, Data Analysis, TensorFlow, Data Mining",Data Analyst
+58,Rishabh Shetty,229309057,A,#e74c3c,AI Research Enthusiast | NLP | Deep Learning,"TensorFlow, Machine Learning, Pandas",BI Analyst
+59,Rohit B Chandy,229302164,A,#e74c3c,Passionate about Data-Driven Decision Making,"Pandas, Computer Vision, AWS, Data Analysis",AI Engineer
+60,Akhangsha Majumder,229202038,A,#e74c3c,Machine Learning Engineer in the Making,"Data Visualization, Python, NumPy, Computer Vision, Data Mining",AI Engineer
+61,Aniket Bhatia,229303127,A,#e74c3c,Transforming Data into Insights | ML & Analytics,"Excel, Machine Learning, PyTorch, Computer Vision, SQL",Data Scientist
+62,Anirudh Bhardwaj,229309049,A,#e74c3c,Machine Learning Engineer in the Making,"R, Data Analysis, Pandas",AI Engineer
+63,Arnav Gupta,229309034,A,#e74c3c,AI Research Enthusiast | NLP | Deep Learning,"NumPy, PyTorch, Deep Learning",Data Analyst
+64,Arul Chudiwale,229309027,A,#e74c3c,Exploring Deep Learning & Computer Vision,"R, Data Visualization, TensorFlow",BI Analyst
+65,Aryan Garv,229303198,A,#e74c3c,AI Research Enthusiast | NLP | Deep Learning,"Pandas, Python, Big Data, Machine Learning",Data Scientist
+66,Ayamullah Khan,229309022,A,#e74c3c,Passionate about Data-Driven Decision Making,"R, Pandas, Power BI",Data Scientist
+67,Bantupalli Lakshit Rahul,229309031,A,#e74c3c,Exploring Deep Learning & Computer Vision,"Deep Learning, Pandas, Data Mining, Excel",BI Analyst
+68,Bhavya Choudhary,229309024,A,#e74c3c,Future Business Intelligence Analyst | Excel | SQL | Tableau,"Big Data, TensorFlow, Data Analysis, AWS, Statistics",AI Engineer
+69,Deveshi Verma,229309008,A,#e74c3c,Data Science Undergraduate | Python | Statistics | ML,"SQL, NumPy, Machine Learning, Pandas",BI Analyst
+70,Dipen Sedawat,229309010,A,#e74c3c,Future Business Intelligence Analyst | Excel | SQL | Tableau,"AWS, NLP, Data Analysis, Big Data",BI Analyst
+71,Gayatri Puranik,229309060,A,#e74c3c,Machine Learning Engineer in the Making,"R, Power BI, Data Visualization, Tableau, Statistics",ML Engineer
+72,Goutham R Varma,229309042,A,#e74c3c,Data Analyst | SQL | Tableau | Power BI,"Statistics, NumPy, Data Mining, Deep Learning",Research Associate
+73,Hardik Bolia,229309037,A,#e74c3c,Passionate about Data-Driven Decision Making,"Tableau, Python, Data Visualization",Data Analyst
+74,Harshita Batta,229309044,A,#e74c3c,Aspiring Data Scientist | Python & ML Enthusiast,"Computer Vision, Machine Learning, Tableau, AWS, SQL",Data Analyst
+75,Kushagra Maheshwari,229309058,A,#e74c3c,Aspiring Data Scientist | Python & ML Enthusiast,"Big Data, Pandas, Data Visualization, Data Mining, Python",AI Engineer
+76,Nachiket Pamecha,229309054,A,#e74c3c,Future Business Intelligence Analyst | Excel | SQL | Tableau,"Data Visualization, Computer Vision, TensorFlow, Statistics, Pandas",Research Associate
+77,Om Prakash Singh,229303183,A,#e74c3c,AI Research Enthusiast | NLP | Deep Learning,"Big Data, Deep Learning, Python",Research Associate
+78,Parth Sharma,229309026,A,#e74c3c,Transforming Data into Insights | ML & Analytics,"Statistics, Pandas, NLP, Big Data",AI Engineer
+79,Pratyush Kumar Debata,229309041,A,#e74c3c,AI Research Enthusiast | NLP | Deep Learning,"Data Visualization, Power BI, Computer Vision, NLP, Data Analysis",Data Analyst
+80,Pushkar Singh,229202035,A,#e74c3c,Aspiring Data Scientist | Python & ML Enthusiast,"SQL, AWS, Data Visualization",BI Analyst
+81,Raeez Mohammed K P,229309052,A,#e74c3c,Transforming Data into Insights | ML & Analytics,"Statistics, R, Data Visualization, TensorFlow, Data Mining",Data Analyst
+82,Rishabh Karnwal,229309063,A,#e74c3c,Data Science Undergraduate | Python | Statistics | ML,"Tableau, R, Power BI, Computer Vision",ML Engineer
+83,Shanaya Srivastava,229309002,A,#e74c3c,Exploring Deep Learning & Computer Vision,"Computer Vision, Data Analysis, NumPy",Data Analyst
+84,Sheshansh Maurya,229309050,A,#e74c3c,AI & Data Enthusiast | Passionate about Predictive Modeling,"Power BI, Statistics, SQL, PyTorch",AI Engineer
+85,Swapnil Suresh Mogal,229309019,A,#e74c3c,Future Business Intelligence Analyst | Excel | SQL | Tableau,"NumPy, AWS, R, Python",Data Scientist
+86,Tanvi Upadhyay,229303130,A,#e74c3c,Future Business Intelligence Analyst | Excel | SQL | Tableau,"Big Data, Data Mining, Statistics, Machine Learning",BI Analyst
+87,Trisha Prakash,229303345,A,#e74c3c,Machine Learning Engineer in the Making,"Python, Deep Learning, Data Mining",BI Analyst
+88,Yashana A Kale,229309016,A,#e74c3c,Data Analyst | SQL | Tableau | Power BI,"NLP, Data Visualization, TensorFlow, Statistics, PyTorch",ML Engineer
+89,Yashanshi,229309006,A,#e74c3c,Data Science Undergraduate | Python | Statistics | ML,"Computer Vision, Deep Learning, TensorFlow, Machine Learning",AI Engineer
+90,Ayush Yadav,229309077,B,#2ecc71,Machine Learning Engineer in the Making,"Python, Data Analysis, Deep Learning",BI Analyst
+91,Abhijith B Nair,229309109,B,#2ecc71,Exploring Deep Learning & Computer Vision,"Pandas, Python, SQL, Data Visualization",AI Engineer
+92,Aditya Vats,229309163,B,#2ecc71,Aspiring Data Scientist | Python & ML Enthusiast,"NumPy, Data Mining, Pandas, Machine Learning",Research Associate
+93,Khushi Bansal,229309142,B,#2ecc71,AI Research Enthusiast | NLP | Deep Learning,"Data Mining, Pandas, SQL",Research Associate
+94,Lakshya Mehta,229309175,B,#2ecc71,Machine Learning Engineer in the Making,"Power BI, PyTorch, Big Data, Computer Vision",Research Associate
+95,Raghav Uniyal,229309088,B,#2ecc71,Passionate about Data-Driven Decision Making,"Statistics, Deep Learning, Python, SQL",Data Analyst
+96,Ram,229309076,B,#2ecc71,AI Research Enthusiast | NLP | Deep Learning,"Data Analysis, Data Mining, SQL",AI Engineer
+97,Shakti Singh Rathore,229309177,B,#2ecc71,Data Science Undergraduate | Python | Statistics | ML,"Pandas, PyTorch, NLP, Big Data",Data Analyst
+98,Siddhanth Das,229309113,B,#2ecc71,Aspiring Data Scientist | Python & ML Enthusiast,"Tableau, Excel, Python, Statistics",BI Analyst
+99,Siddharth Panditrao,229309092,B,#2ecc71,AI Research Enthusiast | NLP | Deep Learning,"Python, Statistics, Data Visualization",BI Analyst
+100,Aditi Priya,229309121,B,#2ecc71,Machine Learning Engineer in the Making,"Tableau, SQL, Excel",Data Analyst
+101,Aiman Choudhri,229309146,B,#2ecc71,Passionate about Data-Driven Decision Making,"Big Data, Python, Pandas",ML Engineer
+102,Ansh Gupta,229309122,B,#2ecc71,Passionate about Data-Driven Decision Making,"Excel, NLP, AWS, PyTorch",BI Analyst
+103,Aratakatla Haneesh Kenny,229309132,B,#2ecc71,Data Science Undergraduate | Python | Statistics | ML,"R, Statistics, Deep Learning",Data Scientist
+104,Atharva Jaiswal,229309131,B,#2ecc71,Aspiring Data Scientist | Python & ML Enthusiast,"PyTorch, Python, Power BI",Research Associate
+105,Darokar Amey Sachin,229309082,B,#2ecc71,Machine Learning Engineer in the Making,"Data Mining, Computer Vision, Machine Learning, Pandas",BI Analyst
+106,Davis Fernandes,229309089,B,#2ecc71,Exploring Deep Learning & Computer Vision,"Python, NumPy, AWS, Data Mining",AI Engineer
+107,Devesh Nahar,229309093,B,#2ecc71,Passionate about Data-Driven Decision Making,"SQL, PyTorch, NLP",ML Engineer
+108,Divyansh Chopra,229309139,B,#2ecc71,Aspiring Data Scientist | Python & ML Enthusiast,"Power BI, Data Mining, Pandas, Tableau",Research Associate
+109,Ishar Singh,229309084,B,#2ecc71,Aspiring Data Scientist | Python & ML Enthusiast,"Data Mining, NLP, AWS, Tableau, Deep Learning",ML Engineer
+110,Jiya Thakur,229308176,B,#2ecc71,Passionate about Data-Driven Decision Making,"NLP, Excel, PyTorch, Python",Research Associate
+111,Kaustubh Ghale,229309086,B,#2ecc71,Future Business Intelligence Analyst | Excel | SQL | Tableau,"Computer Vision, TensorFlow, Data Mining",BI Analyst
+112,Khwaish Mankotia,229309152,B,#2ecc71,Data Analyst | SQL | Tableau | Power BI,"Data Analysis, SQL, R, Computer Vision",Data Analyst
+113,Mangalya D Phaye,229309124,B,#2ecc71,Exploring Deep Learning & Computer Vision,"Excel, Data Analysis, Power BI, NLP",BI Analyst
+114,Mehul Karwa,229309178,B,#2ecc71,AI Research Enthusiast | NLP | Deep Learning,"Data Mining, Data Visualization, Big Data, Computer Vision",Data Scientist
+115,Mrunmai Bhongade,229309102,B,#2ecc71,Aspiring Data Scientist | Python & ML Enthusiast,"Data Analysis, Data Visualization, Computer Vision",BI Analyst
+116,Prakhar Sharma,229309078,B,#2ecc71,AI & Data Enthusiast | Passionate about Predictive Modeling,"NLP, SQL, Computer Vision, Machine Learning, Big Data",ML Engineer
+117,Ramya Mishra,229309090,B,#2ecc71,Future Business Intelligence Analyst | Excel | SQL | Tableau,"Tableau, Data Mining, Statistics, Pandas, Big Data",Data Analyst
+118,Rashi Sharma,229309162,B,#2ecc71,Data Analyst | SQL | Tableau | Power BI,"R, Data Visualization, NLP, Computer Vision, Machine Learning",BI Analyst
+119,S.Niranjana,229309106,B,#2ecc71,Machine Learning Engineer in the Making,"Computer Vision, SQL, NumPy",Data Scientist
+120,Saachee Saluja,229309179,B,#2ecc71,Machine Learning Engineer in the Making,"NLP, Deep Learning, Power BI",Data Analyst
+121,Saksham Vishwakarma,229309160,B,#2ecc71,Future Business Intelligence Analyst | Excel | SQL | Tableau,"Python, PyTorch, NLP, NumPy, Data Visualization",Data Analyst
+122,Sambhav Maheshwari,229309155,B,#2ecc71,Transforming Data into Insights | ML & Analytics,"PyTorch, Statistics, Data Analysis, Tableau, Data Mining",ML Engineer
+123,Saurabh Verma,229309133,B,#2ecc71,AI & Data Enthusiast | Passionate about Predictive Modeling,"Machine Learning, Power BI, TensorFlow, SQL",ML Engineer
+124,Shashwat Bhamare,229309157,B,#2ecc71,Future Business Intelligence Analyst | Excel | SQL | Tableau,"Power BI, Python, TensorFlow, NumPy",Data Analyst
+125,Shivansh Srivastava,229309137,B,#2ecc71,Exploring Deep Learning & Computer Vision,"Power BI, Computer Vision, Excel, Machine Learning, Pandas",Data Scientist
+126,Siddharth Pallekonda,229309114,B,#2ecc71,Transforming Data into Insights | ML & Analytics,"Excel, Data Analysis, AWS, NLP",Data Analyst
+127,Suvvari Hitesh Karvil,229309144,B,#2ecc71,AI & Data Enthusiast | Passionate about Predictive Modeling,"Big Data, NLP, Pandas, AWS, Machine Learning",ML Engineer
+128,Tanishka Gupta,229309108,B,#2ecc71,AI Research Enthusiast | NLP | Deep Learning,"R, AWS, Tableau, Machine Learning, Statistics",Research Associate
+129,Vedant Kedia,229309170,B,#2ecc71,AI & Data Enthusiast | Passionate about Predictive Modeling,"Deep Learning, Tableau, NumPy, R, PyTorch",Data Scientist
+130,Yashashvi Saraan,229309119,B,#2ecc71,Transforming Data into Insights | ML & Analytics,"Data Mining, NumPy, PyTorch, TensorFlow, AWS",Data Analyst
+131,Mahee Jain,229309168,B,#2ecc71,Data Analyst | SQL | Tableau | Power BI,"Deep Learning, R, SQL, PyTorch, Data Analysis",AI Engineer
+132,Ankit Kumar Tiwari,229309098,B,#2ecc71,Aspiring Data Scientist | Python & ML Enthusiast,"Pandas, Big Data, Computer Vision",Research Associate
+133,Jasraj Singh,229309174,B,#2ecc71,Future Business Intelligence Analyst | Excel | SQL | Tableau,"Power BI, NLP, Machine Learning, Data Analysis, Deep Learning",Research Associate
+134,Aditya Deva,229309182,B,#2ecc71,Data Science Undergraduate | Python | Statistics | ML,"Deep Learning, Big Data, Data Visualization, NLP, Machine Learning",Research Associate
+135,Gada Pranav,229309167,B,#2ecc71,Data Science Undergraduate | Python | Statistics | ML,"Computer Vision, R, Data Analysis",ML Engineer
+136,Ishkirat Singh Bhatia,229309118,B,#2ecc71,Data Analyst | SQL | Tableau | Power BI,"Deep Learning, Data Visualization, Statistics, Big Data, AWS",AI Engineer
+137,Shivansh mishra,229309100,B,#2ecc71,Machine Learning Engineer in the Making,"Pandas, Python, Data Mining",Data Scientist
+138,Suryansh Kansara,229309216,C,#3498db,AI Research Enthusiast | NLP | Deep Learning,"Data Visualization, Deep Learning, Computer Vision, Machine Learning, Pandas",BI Analyst
+139,Aryan Tyagi,229309247,C,#3498db,Future Business Intelligence Analyst | Excel | SQL | Tableau,"Data Mining, AWS, Power BI, Excel, Python",Data Scientist
+140,Atharva Mathur,229309276,C,#3498db,Exploring Deep Learning & Computer Vision,"TensorFlow, Pandas, SQL, Big Data, Machine Learning",ML Engineer
+141,Chahat Verma,229311142,C,#3498db,Passionate about Data-Driven Decision Making,"Machine Learning, SQL, Power BI, Statistics, TensorFlow",AI Engineer
+142,Kartikey Sharma,229309218,C,#3498db,Data Analyst | SQL | Tableau | Power BI,"Big Data, TensorFlow, PyTorch, Data Visualization, Data Mining",BI Analyst
+143,Mohit Singh,229309240,C,#3498db,Machine Learning Engineer in the Making,"Python, Excel, Big Data",Research Associate
+144,Pavishka B,229309134,C,#3498db,AI Research Enthusiast | NLP | Deep Learning,"NumPy, Deep Learning, R, Power BI, SQL",AI Engineer
+145,Revant Kaushik,229309213,C,#3498db,AI & Data Enthusiast | Passionate about Predictive Modeling,"SQL, NLP, Big Data",Research Associate
+146,Rudra Vipulkumar Sathwara,229309231,C,#3498db,Machine Learning Engineer in the Making,"Machine Learning, Excel, Python",ML Engineer
+147,Sanskriti Mahore,229309265,C,#3498db,Data Analyst | SQL | Tableau | Power BI,"Deep Learning, Pandas, Statistics, Machine Learning",Data Scientist
+148,Smriti Manish Bhattacharjee,229309202,C,#3498db,Machine Learning Engineer in the Making,"Computer Vision, Python, NumPy, Big Data, Machine Learning",BI Analyst
+149,Sumit Lavania,229309246,C,#3498db,Machine Learning Engineer in the Making,"AWS, Data Mining, Python, NumPy, Tableau",Data Scientist
+150,Aaryan Srivastava,229311071,C,#3498db,AI Research Enthusiast | NLP | Deep Learning,"Deep Learning, R, Data Analysis, NumPy",Data Analyst
+151,Abhaya Trivedi,229309269,C,#3498db,Data Science Undergraduate | Python | Statistics | ML,"Pandas, Tableau, NumPy",AI Engineer
+152,Abhinav Singh,229308233,C,#3498db,Passionate about Data-Driven Decision Making,"PyTorch, Statistics, SQL, TensorFlow, Power BI",ML Engineer
+153,Abhiyanshu Malik,229309238,C,#3498db,Exploring Deep Learning & Computer Vision,"PyTorch, Data Visualization, Power BI, Statistics, Data Analysis",Data Scientist
+154,Akshit Bhardwaj,229309241,C,#3498db,Data Science Undergraduate | Python | Statistics | ML,"Pandas, NLP, Statistics",Data Scientist
+155,Anahita Bhandari,229309186,C,#3498db,Future Business Intelligence Analyst | Excel | SQL | Tableau,"Statistics, Machine Learning, Tableau, Data Visualization, TensorFlow",Research Associate
+156,Anoushka Ashok Vats,229309242,C,#3498db,AI & Data Enthusiast | Passionate about Predictive Modeling,"Python, TensorFlow, Pandas",ML Engineer
+157,Anshul Nag,229309232,C,#3498db,Future Business Intelligence Analyst | Excel | SQL | Tableau,"Statistics, Excel, Python",AI Engineer
+158,Anshul Nimmala,229309203,C,#3498db,Exploring Deep Learning & Computer Vision,"AWS, Data Analysis, Power BI",ML Engineer
+159,Aridaman Singh Chauhan,229309225,C,#3498db,Machine Learning Engineer in the Making,"Big Data, Machine Learning, TensorFlow",AI Engineer
+160,Arpit Jain,229309264,C,#3498db,AI & Data Enthusiast | Passionate about Predictive Modeling,"Tableau, Data Analysis, TensorFlow",Data Analyst
+161,Asmi Verma,229309266,C,#3498db,Passionate about Data-Driven Decision Making,"Computer Vision, Data Analysis, Python, Deep Learning, NLP",ML Engineer
+162,Divit Mittal,229309249,C,#3498db,AI & Data Enthusiast | Passionate about Predictive Modeling,"Python, NLP, Data Mining, Power BI",AI Engineer
+163,Faaiz Hasib Mallick,229309195,C,#3498db,Transforming Data into Insights | ML & Analytics,"NLP, Tableau, PyTorch",BI Analyst
+164,Koustubh Patel,229309221,C,#3498db,Data Science Undergraduate | Python | Statistics | ML,"Machine Learning, PyTorch, Data Visualization, Excel",Data Analyst
+165,Kunal Rajani,229309206,C,#3498db,Passionate about Data-Driven Decision Making,"Big Data, Statistics, Computer Vision",Data Analyst
+166,Latika Mangla,229309236,C,#3498db,Machine Learning Engineer in the Making,"NLP, Machine Learning, Data Analysis, AWS, Excel",ML Engineer
+167,Maanas Singh,229309209,C,#3498db,AI & Data Enthusiast | Passionate about Predictive Modeling,"TensorFlow, NLP, NumPy, Statistics, PyTorch",Data Analyst
+168,Malay Khabiya,229309273,C,#3498db,Data Science Undergraduate | Python | Statistics | ML,"Computer Vision, TensorFlow, SQL, NLP, AWS",ML Engineer
+169,Mohammad Khalid,229309245,C,#3498db,Machine Learning Engineer in the Making,"Python, TensorFlow, R, NLP",ML Engineer
+170,Nandini Malik,229309205,C,#3498db,AI Research Enthusiast | NLP | Deep Learning,"Machine Learning, Pandas, NLP, Tableau",AI Engineer
+171,Pranav Saini,219309047,C,#3498db,Passionate about Data-Driven Decision Making,"NLP, Statistics, Machine Learning, TensorFlow",ML Engineer
+172,Priyanshi Goel,229309201,C,#3498db,AI & Data Enthusiast | Passionate about Predictive Modeling,"Power BI, Tableau, NLP, Data Analysis",Data Scientist
+173,Priyanshu Sankhla,229309204,C,#3498db,AI & Data Enthusiast | Passionate about Predictive Modeling,"Machine Learning, Deep Learning, Big Data",AI Engineer
+174,Priyanshu Walia,229309211,C,#3498db,Passionate about Data-Driven Decision Making,"PyTorch, Computer Vision, Pandas",Data Analyst
+175,Rashika Ranjan,229309243,C,#3498db,Data Science Undergraduate | Python | Statistics | ML,"Tableau, NLP, TensorFlow, Python, Data Mining",ML Engineer
+176,Ryansh Arora,229309223,C,#3498db,Transforming Data into Insights | ML & Analytics,"Tableau, PyTorch, R, Data Visualization, Deep Learning",AI Engineer
+177,Sanyam Modi,229309248,C,#3498db,Machine Learning Engineer in the Making,"Pandas, Computer Vision, Deep Learning",AI Engineer
+178,Sarthik Jena,229309219,C,#3498db,AI Research Enthusiast | NLP | Deep Learning,"Machine Learning, PyTorch, AWS, Data Mining",AI Engineer
+179,Siya Gupta,229309214,C,#3498db,Aspiring Data Scientist | Python & ML Enthusiast,"Deep Learning, Statistics, TensorFlow",BI Analyst
+180,Suraj Chaudhary,229309234,C,#3498db,Data Science Undergraduate | Python | Statistics | ML,"AWS, Data Visualization, TensorFlow",BI Analyst
+181,Teena Jain,229311246,C,#3498db,Future Business Intelligence Analyst | Excel | SQL | Tableau,"Deep Learning, Data Analysis, Computer Vision, NumPy",ML Engineer
+182,Vedansh Rai,229310438,C,#3498db,Aspiring Data Scientist | Python & ML Enthusiast,"Data Visualization, Computer Vision, PyTorch, Tableau, Statistics",Data Analyst
+183,Yash Dhingra,229309208,C,#3498db,Exploring Deep Learning & Computer Vision,"Big Data, Excel, Deep Learning, Computer Vision",ML Engineer

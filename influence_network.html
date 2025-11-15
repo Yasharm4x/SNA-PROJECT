@@ -1,0 +1,357 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script>function neighbourhoodHighlight(params) {
+  // console.log("in nieghbourhoodhighlight");
+  allNodes = nodes.get({ returnType: "Object" });
+  // originalNodes = JSON.parse(JSON.stringify(allNodes));
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    highlightActive = true;
+    var i, j;
+    var selectedNode = params.nodes[0];
+    var degrees = 2;
+
+    // mark all nodes as hard to read.
+    for (let nodeId in allNodes) {
+      // nodeColors[nodeId] = allNodes[nodeId].color;
+      allNodes[nodeId].color = "rgba(200,200,200,0.5)";
+      if (allNodes[nodeId].hiddenLabel === undefined) {
+        allNodes[nodeId].hiddenLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+    var connectedNodes = network.getConnectedNodes(selectedNode);
+    var allConnectedNodes = [];
+
+    // get the second degree nodes
+    for (i = 1; i < degrees; i++) {
+      for (j = 0; j < connectedNodes.length; j++) {
+        allConnectedNodes = allConnectedNodes.concat(
+          network.getConnectedNodes(connectedNodes[j])
+        );
+      }
+    }
+
+    // all second degree nodes get a different color and their label back
+    for (i = 0; i < allConnectedNodes.length; i++) {
+      // allNodes[allConnectedNodes[i]].color = "pink";
+      allNodes[allConnectedNodes[i]].color = "rgba(150,150,150,0.75)";
+      if (allNodes[allConnectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[allConnectedNodes[i]].label =
+          allNodes[allConnectedNodes[i]].hiddenLabel;
+        allNodes[allConnectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // all first degree nodes get their own color and their label back
+    for (i = 0; i < connectedNodes.length; i++) {
+      // allNodes[connectedNodes[i]].color = undefined;
+      allNodes[connectedNodes[i]].color = nodeColors[connectedNodes[i]];
+      if (allNodes[connectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[connectedNodes[i]].label =
+          allNodes[connectedNodes[i]].hiddenLabel;
+        allNodes[connectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // the main node gets its own color and its label back.
+    // allNodes[selectedNode].color = undefined;
+    allNodes[selectedNode].color = nodeColors[selectedNode];
+    if (allNodes[selectedNode].hiddenLabel !== undefined) {
+      allNodes[selectedNode].label = allNodes[selectedNode].hiddenLabel;
+      allNodes[selectedNode].hiddenLabel = undefined;
+    }
+  } else if (highlightActive === true) {
+    // console.log("highlightActive was true");
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      // allNodes[nodeId].color = "purple";
+      allNodes[nodeId].color = nodeColors[nodeId];
+      // delete allNodes[nodeId].color;
+      if (allNodes[nodeId].hiddenLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].hiddenLabel;
+        allNodes[nodeId].hiddenLabel = undefined;
+      }
+    }
+    highlightActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    // console.log("Nothing was selected");
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        // allNodes[nodeId].color = {};
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function filterHighlight(params) {
+  allNodes = nodes.get({ returnType: "Object" });
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    filterActive = true;
+    let selectedNodes = params.nodes;
+
+    // hiding all nodes and saving the label
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = true;
+      if (allNodes[nodeId].savedLabel === undefined) {
+        allNodes[nodeId].savedLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+
+    for (let i=0; i < selectedNodes.length; i++) {
+      allNodes[selectedNodes[i]].hidden = false;
+      if (allNodes[selectedNodes[i]].savedLabel !== undefined) {
+        allNodes[selectedNodes[i]].label = allNodes[selectedNodes[i]].savedLabel;
+        allNodes[selectedNodes[i]].savedLabel = undefined;
+      }
+    }
+
+  } else if (filterActive === true) {
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = false;
+      if (allNodes[nodeId].savedLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].savedLabel;
+        allNodes[nodeId].savedLabel = undefined;
+      }
+    }
+    filterActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function selectNode(nodes) {
+  network.selectNodes(nodes);
+  neighbourhoodHighlight({ nodes: nodes });
+  return nodes;
+}
+
+function selectNodes(nodes) {
+  network.selectNodes(nodes);
+  filterHighlight({nodes: nodes});
+  return nodes;
+}
+
+function highlightFilter(filter) {
+  let selectedNodes = []
+  let selectedProp = filter['property']
+  if (filter['item'] === 'node') {
+    let allNodes = nodes.get({ returnType: "Object" });
+    for (let nodeId in allNodes) {
+      if (allNodes[nodeId][selectedProp] && filter['value'].includes((allNodes[nodeId][selectedProp]).toString())) {
+        selectedNodes.push(nodeId)
+      }
+    }
+  }
+  else if (filter['item'] === 'edge'){
+    let allEdges = edges.get({returnType: 'object'});
+    // check if the selected property exists for selected edge and select the nodes connected to the edge
+    for (let edge in allEdges) {
+      if (allEdges[edge][selectedProp] && filter['value'].includes((allEdges[edge][selectedProp]).toString())) {
+        selectedNodes.push(allEdges[edge]['from'])
+        selectedNodes.push(allEdges[edge]['to'])
+      }
+    }
+  }
+  selectNodes(selectedNodes)
+}</script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+            
+            
+            
+            
+            
+
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 750px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#f39c12", "font": {"color": "black"}, "id": "175", "label": "Rashika Ranjan (175)", "shape": "dot", "size": 13.3, "title": "\u003cb\u003eRashika Ranjan\u003c/b\u003e\u003cbr\u003eReg No: 229309243\u003cbr\u003eSection: C\u003cbr\u003eSkills: Tableau, NLP, TensorFlow, Python, Data Mining\u003cbr\u003eTarget: ML Engineer"}, {"color": "#2ecc71", "font": {"color": "black"}, "id": "120", "label": "Saachee Saluja (120)", "shape": "dot", "size": 12.0, "title": "\u003cb\u003eSaachee Saluja\u003c/b\u003e\u003cbr\u003eReg No: 229309179\u003cbr\u003eSection: B\u003cbr\u003eSkills: NLP, Deep Learning, Power BI\u003cbr\u003eTarget: Data Analyst"}, {"color": "#1f77b4", "font": {"color": "black"}, "id": "51", "label": "Aditya Shukla (51)", "shape": "dot", "size": 17.2, "title": "\u003cb\u003eAditya Shukla\u003c/b\u003e\u003cbr\u003eReg No: 229209008\u003cbr\u003eSection: A\u003cbr\u003eSkills: Data Visualization, NLP, AWS, Python\u003cbr\u003eTarget: Data Analyst"}, {"color": "#2ecc71", "font": {"color": "black"}, "id": "113", "label": "Mangalya D Phaye (113)", "shape": "dot", "size": 14.6, "title": "\u003cb\u003eMangalya D Phaye\u003c/b\u003e\u003cbr\u003eReg No: 229309124\u003cbr\u003eSection: B\u003cbr\u003eSkills: Excel, Data Analysis, Power BI, NLP\u003cbr\u003eTarget: BI Analyst"}, {"color": "#f39c12", "font": {"color": "black"}, "id": "162", "label": "Divit Mittal (162)", "shape": "dot", "size": 12.0, "title": "\u003cb\u003eDivit Mittal\u003c/b\u003e\u003cbr\u003eReg No: 229309249\u003cbr\u003eSection: C\u003cbr\u003eSkills: Python, NLP, Data Mining, Power BI\u003cbr\u003eTarget: AI Engineer"}, {"color": "#2ecc71", "font": {"color": "black"}, "id": "102", "label": "Ansh Gupta (102)", "shape": "dot", "size": 13.3, "title": "\u003cb\u003eAnsh Gupta\u003c/b\u003e\u003cbr\u003eReg No: 229309122\u003cbr\u003eSection: B\u003cbr\u003eSkills: Excel, NLP, AWS, PyTorch\u003cbr\u003eTarget: BI Analyst"}, {"color": "#2ecc71", "font": {"color": "black"}, "id": "107", "label": "Devesh Nahar (107)", "shape": "dot", "size": 19.8, "title": "\u003cb\u003eDevesh Nahar\u003c/b\u003e\u003cbr\u003eReg No: 229309093\u003cbr\u003eSection: B\u003cbr\u003eSkills: SQL, PyTorch, NLP\u003cbr\u003eTarget: ML Engineer"}, {"color": "#2ecc71", "font": {"color": "black"}, "id": "133", "label": "Jasraj Singh (133)", "shape": "dot", "size": 17.2, "title": "\u003cb\u003eJasraj Singh\u003c/b\u003e\u003cbr\u003eReg No: 229309174\u003cbr\u003eSection: B\u003cbr\u003eSkills: Power BI, NLP, Machine Learning, Data Analysis, Deep Learning\u003cbr\u003eTarget: Research Associate"}, {"color": "#1f77b4", "font": {"color": "black"}, "id": "13", "label": "Ananya Agarwal (13)", "shape": "dot", "size": 15.9, "title": "\u003cb\u003eAnanya Agarwal\u003c/b\u003e\u003cbr\u003eReg No: 229309015\u003cbr\u003eSection: A\u003cbr\u003eSkills: Statistics, Computer Vision, NLP, PyTorch\u003cbr\u003eTarget: BI Analyst"}, {"color": "#f39c12", "font": {"color": "black"}, "id": "30", "label": "Ananya Manan (30)", "shape": "dot", "size": 13.3, "title": "\u003cb\u003eAnanya Manan\u003c/b\u003e\u003cbr\u003eReg No: 229309199\u003cbr\u003eSection: C\u003cbr\u003eSkills: Data Analysis, NLP, Tableau, Data Visualization, NumPy\u003cbr\u003eTarget: Data Scientist"}, {"color": "#2ecc71", "font": {"color": "black"}, "id": "116", "label": "Prakhar Sharma (116)", "shape": "dot", "size": 14.6, "title": "\u003cb\u003ePrakhar Sharma\u003c/b\u003e\u003cbr\u003eReg No: 229309078\u003cbr\u003eSection: B\u003cbr\u003eSkills: NLP, SQL, Computer Vision, Machine Learning, Big Data\u003cbr\u003eTarget: ML Engineer"}, {"color": "#f39c12", "font": {"color": "black"}, "id": "170", "label": "Nandini Malik (170)", "shape": "dot", "size": 15.9, "title": "\u003cb\u003eNandini Malik\u003c/b\u003e\u003cbr\u003eReg No: 229309205\u003cbr\u003eSection: C\u003cbr\u003eSkills: Machine Learning, Pandas, NLP, Tableau\u003cbr\u003eTarget: AI Engineer"}, {"color": "#2ecc71", "font": {"color": "black"}, "id": "2", "label": "Dhruv Dahiya (2)", "shape": "dot", "size": 13.3, "title": "\u003cb\u003eDhruv Dahiya\u003c/b\u003e\u003cbr\u003eReg No: 229309151\u003cbr\u003eSection: B\u003cbr\u003eSkills: Statistics, NLP, Excel\u003cbr\u003eTarget: Data Scientist"}, {"color": "#f39c12", "font": {"color": "black"}, "id": "8", "label": "Yash Sharma (8)", "shape": "dot", "size": 13.3, "title": "\u003cb\u003eYash Sharma\u003c/b\u003e\u003cbr\u003eReg No: 229309194\u003cbr\u003eSection: C\u003cbr\u003eSkills: Data Mining, NLP, AWS, TensorFlow, NumPy\u003cbr\u003eTarget: ML Engineer"}, {"color": "#1f77b4", "font": {"color": "black"}, "id": "43", "label": "Tanishk Lakra (43)", "shape": "dot", "size": 18.5, "title": "\u003cb\u003eTanishk Lakra\u003c/b\u003e\u003cbr\u003eReg No: 229309028\u003cbr\u003eSection: A\u003cbr\u003eSkills: NumPy, PyTorch, Machine Learning, NLP\u003cbr\u003eTarget: AI Engineer"}, {"color": "#f39c12", "font": {"color": "black"}, "id": "179", "label": "Siya Gupta (179)", "shape": "dot", "size": 15.9, "title": "\u003cb\u003eSiya Gupta\u003c/b\u003e\u003cbr\u003eReg No: 229309214\u003cbr\u003eSection: C\u003cbr\u003eSkills: Deep Learning, Statistics, TensorFlow\u003cbr\u003eTarget: BI Analyst"}, {"color": "#1f77b4", "font": {"color": "black"}, "id": "88", "label": "Yashana A Kale (88)", "shape": "dot", "size": 13.3, "title": "\u003cb\u003eYashana A Kale\u003c/b\u003e\u003cbr\u003eReg No: 229309016\u003cbr\u003eSection: A\u003cbr\u003eSkills: NLP, Data Visualization, TensorFlow, Statistics, PyTorch\u003cbr\u003eTarget: ML Engineer"}, {"color": "#2ecc71", "font": {"color": "black"}, "id": "97", "label": "Shakti Singh Rathore (97)", "shape": "dot", "size": 18.5, "title": "\u003cb\u003eShakti Singh Rathore\u003c/b\u003e\u003cbr\u003eReg No: 229309177\u003cbr\u003eSection: B\u003cbr\u003eSkills: Pandas, PyTorch, NLP, Big Data\u003cbr\u003eTarget: Data Analyst"}, {"color": "#f39c12", "font": {"color": "black"}, "id": "166", "label": "Latika Mangla (166)", "shape": "dot", "size": 19.8, "title": "\u003cb\u003eLatika Mangla\u003c/b\u003e\u003cbr\u003eReg No: 229309236\u003cbr\u003eSection: C\u003cbr\u003eSkills: NLP, Machine Learning, Data Analysis, AWS, Excel\u003cbr\u003eTarget: ML Engineer"}, {"color": "#1f77b4", "font": {"color": "black"}, "id": "12", "label": "Aman Sharma (12)", "shape": "dot", "size": 19.8, "title": "\u003cb\u003eAman Sharma\u003c/b\u003e\u003cbr\u003eReg No: 229303072\u003cbr\u003eSection: A\u003cbr\u003eSkills: PyTorch, NLP, Statistics, Data Mining\u003cbr\u003eTarget: AI Engineer"}, {"color": "#1f77b4", "font": {"color": "black"}, "id": "78", "label": "Parth Sharma (78)", "shape": "dot", "size": 13.3, "title": "\u003cb\u003eParth Sharma\u003c/b\u003e\u003cbr\u003eReg No: 229309026\u003cbr\u003eSection: A\u003cbr\u003eSkills: Statistics, Pandas, NLP, Big Data\u003cbr\u003eTarget: AI Engineer"}, {"color": "#f39c12", "font": {"color": "black"}, "id": "168", "label": "Malay Khabiya (168)", "shape": "dot", "size": 15.9, "title": "\u003cb\u003eMalay Khabiya\u003c/b\u003e\u003cbr\u003eReg No: 229309273\u003cbr\u003eSection: C\u003cbr\u003eSkills: Computer Vision, TensorFlow, SQL, NLP, AWS\u003cbr\u003eTarget: ML Engineer"}, {"color": "#2ecc71", "font": {"color": "black"}, "id": "134", "label": "Aditya Deva (134)", "shape": "dot", "size": 12.0, "title": "\u003cb\u003eAditya Deva\u003c/b\u003e\u003cbr\u003eReg No: 229309182\u003cbr\u003eSection: B\u003cbr\u003eSkills: Deep Learning, Big Data, Data Visualization, NLP, Machine Learning\u003cbr\u003eTarget: Research Associate"}, {"color": "#f39c12", "font": {"color": "black"}, "id": "32", "label": "Divyansh Dhawan (32)", "shape": "dot", "size": 14.6, "title": "\u003cb\u003eDivyansh Dhawan\u003c/b\u003e\u003cbr\u003eReg No: 229309244\u003cbr\u003eSection: C\u003cbr\u003eSkills: Pandas, Excel, NLP\u003cbr\u003eTarget: ML Engineer"}, {"color": "#f39c12", "font": {"color": "black"}, "id": "154", "label": "Akshit Bhardwaj (154)", "shape": "dot", "size": 15.9, "title": "\u003cb\u003eAkshit Bhardwaj\u003c/b\u003e\u003cbr\u003eReg No: 229309241\u003cbr\u003eSection: C\u003cbr\u003eSkills: Pandas, NLP, Statistics\u003cbr\u003eTarget: Data Scientist"}, {"color": "#2ecc71", "font": {"color": "black"}, "id": "127", "label": "Suvvari Hitesh Karvil (127)", "shape": "dot", "size": 15.9, "title": "\u003cb\u003eSuvvari Hitesh Karvil\u003c/b\u003e\u003cbr\u003eReg No: 229309144\u003cbr\u003eSection: B\u003cbr\u003eSkills: Big Data, NLP, Pandas, AWS, Machine Learning\u003cbr\u003eTarget: ML Engineer"}, {"color": "#1f77b4", "font": {"color": "black"}, "id": "79", "label": "Pratyush Kumar Debata (79)", "shape": "dot", "size": 15.9, "title": "\u003cb\u003ePratyush Kumar Debata\u003c/b\u003e\u003cbr\u003eReg No: 229309041\u003cbr\u003eSection: A\u003cbr\u003eSkills: Data Visualization, Power BI, Computer Vision, NLP, Data Analysis\u003cbr\u003eTarget: Data Analyst"}, {"color": "#f39c12", "font": {"color": "black"}, "id": "161", "label": "Asmi Verma (161)", "shape": "dot", "size": 18.5, "title": "\u003cb\u003eAsmi Verma\u003c/b\u003e\u003cbr\u003eReg No: 229309266\u003cbr\u003eSection: C\u003cbr\u003eSkills: Computer Vision, Data Analysis, Python, Deep Learning, NLP\u003cbr\u003eTarget: ML Engineer"}, {"color": "#f39c12", "font": {"color": "black"}, "id": "38", "label": "Siddhant Shaw (38)", "shape": "dot", "size": 15.9, "title": "\u003cb\u003eSiddhant Shaw\u003c/b\u003e\u003cbr\u003eReg No: 229309235\u003cbr\u003eSection: C\u003cbr\u003eSkills: NLP, TensorFlow, SQL, NumPy, Statistics\u003cbr\u003eTarget: BI Analyst"}, {"color": "#1f77b4", "font": {"color": "black"}, "id": "53", "label": "Arnav Jhamb (53)", "shape": "dot", "size": 15.9, "title": "\u003cb\u003eArnav Jhamb\u003c/b\u003e\u003cbr\u003eReg No: 229309025\u003cbr\u003eSection: A\u003cbr\u003eSkills: NumPy, Computer Vision, Pandas, NLP\u003cbr\u003eTarget: ML Engineer"}, {"color": "#2ecc71", "font": {"color": "black"}, "id": "118", "label": "Rashi Sharma (118)", "shape": "dot", "size": 12.0, "title": "\u003cb\u003eRashi Sharma\u003c/b\u003e\u003cbr\u003eReg No: 229309162\u003cbr\u003eSection: B\u003cbr\u003eSkills: R, Data Visualization, NLP, Computer Vision, Machine Learning\u003cbr\u003eTarget: BI Analyst"}, {"color": "#f39c12", "font": {"color": "black"}, "id": "169", "label": "Mohammad Khalid (169)", "shape": "dot", "size": 14.6, "title": "\u003cb\u003eMohammad Khalid\u003c/b\u003e\u003cbr\u003eReg No: 229309245\u003cbr\u003eSection: C\u003cbr\u003eSkills: Python, TensorFlow, R, NLP\u003cbr\u003eTarget: ML Engineer"}, {"color": "#1f77b4", "font": {"color": "black"}, "id": "18", "label": "Shashwat Singh (18)", "shape": "dot", "size": 14.6, "title": "\u003cb\u003eShashwat Singh\u003c/b\u003e\u003cbr\u003eReg No: 229303309\u003cbr\u003eSection: A\u003cbr\u003eSkills: NLP, Computer Vision, R, Tableau, TensorFlow\u003cbr\u003eTarget: Research Associate"}, {"color": "#2ecc71", "font": {"color": "black"}, "id": "27", "label": "Rahul Tanwar (27)", "shape": "dot", "size": 15.9, "title": "\u003cb\u003eRahul Tanwar\u003c/b\u003e\u003cbr\u003eReg No: 229309085\u003cbr\u003eSection: B\u003cbr\u003eSkills: Deep Learning, NLP, Data Mining\u003cbr\u003eTarget: BI Analyst"}, {"color": "#f39c12", "font": {"color": "black"}, "id": "172", "label": "Priyanshi Goel (172)", "shape": "dot", "size": 15.9, "title": "\u003cb\u003ePriyanshi Goel\u003c/b\u003e\u003cbr\u003eReg No: 229309201\u003cbr\u003eSection: C\u003cbr\u003eSkills: Power BI, Tableau, NLP, Data Analysis\u003cbr\u003eTarget: Data Scientist"}, {"color": "#f39c12", "font": {"color": "black"}, "id": "167", "label": "Maanas Singh (167)", "shape": "dot", "size": 15.9, "title": "\u003cb\u003eMaanas Singh\u003c/b\u003e\u003cbr\u003eReg No: 229309209\u003cbr\u003eSection: C\u003cbr\u003eSkills: TensorFlow, NLP, NumPy, Statistics, PyTorch\u003cbr\u003eTarget: Data Analyst"}, {"color": "#f39c12", "font": {"color": "black"}, "id": "171", "label": "Pranav Saini (171)", "shape": "dot", "size": 14.6, "title": "\u003cb\u003ePranav Saini\u003c/b\u003e\u003cbr\u003eReg No: 219309047\u003cbr\u003eSection: C\u003cbr\u003eSkills: NLP, Statistics, Machine Learning, TensorFlow\u003cbr\u003eTarget: ML Engineer"}, {"color": "#2ecc71", "font": {"color": "black"}, "id": "126", "label": "Siddharth Pallekonda (126)", "shape": "dot", "size": 17.2, "title": "\u003cb\u003eSiddharth Pallekonda\u003c/b\u003e\u003cbr\u003eReg No: 229309114\u003cbr\u003eSection: B\u003cbr\u003eSkills: Excel, Data Analysis, AWS, NLP\u003cbr\u003eTarget: Data Analyst"}, {"color": "#f39c12", "font": {"color": "black"}, "id": "163", "label": "Faaiz Hasib Mallick (163)", "shape": "dot", "size": 14.6, "title": "\u003cb\u003eFaaiz Hasib Mallick\u003c/b\u003e\u003cbr\u003eReg No: 229309195\u003cbr\u003eSection: C\u003cbr\u003eSkills: NLP, Tableau, PyTorch\u003cbr\u003eTarget: BI Analyst"}, {"color": "#2ecc71", "font": {"color": "black"}, "id": "121", "label": "Saksham Vishwakarma (121)", "shape": "dot", "size": 13.3, "title": "\u003cb\u003eSaksham Vishwakarma\u003c/b\u003e\u003cbr\u003eReg No: 229309160\u003cbr\u003eSection: B\u003cbr\u003eSkills: Python, PyTorch, NLP, NumPy, Data Visualization\u003cbr\u003eTarget: Data Analyst"}, {"color": "#2ecc71", "font": {"color": "black"}, "id": "109", "label": "Ishar Singh (109)", "shape": "dot", "size": 18.5, "title": "\u003cb\u003eIshar Singh\u003c/b\u003e\u003cbr\u003eReg No: 229309084\u003cbr\u003eSection: B\u003cbr\u003eSkills: Data Mining, NLP, AWS, Tableau, Deep Learning\u003cbr\u003eTarget: ML Engineer"}, {"color": "#1f77b4", "font": {"color": "black"}, "id": "70", "label": "Dipen Sedawat (70)", "shape": "dot", "size": 15.9, "title": "\u003cb\u003eDipen Sedawat\u003c/b\u003e\u003cbr\u003eReg No: 229309010\u003cbr\u003eSection: A\u003cbr\u003eSkills: AWS, NLP, Data Analysis, Big Data\u003cbr\u003eTarget: BI Analyst"}, {"color": "#f39c12", "font": {"color": "black"}, "id": "145", "label": "Revant Kaushik (145)", "shape": "dot", "size": 13.3, "title": "\u003cb\u003eRevant Kaushik\u003c/b\u003e\u003cbr\u003eReg No: 229309213\u003cbr\u003eSection: C\u003cbr\u003eSkills: SQL, NLP, Big Data\u003cbr\u003eTarget: Research Associate"}, {"color": "#1f77b4", "font": {"color": "black"}, "id": "80", "label": "Pushkar Singh (80)", "shape": "dot", "size": 13.3, "title": "\u003cb\u003ePushkar Singh\u003c/b\u003e\u003cbr\u003eReg No: 229202035\u003cbr\u003eSection: A\u003cbr\u003eSkills: SQL, AWS, Data Visualization\u003cbr\u003eTarget: BI Analyst"}, {"color": "#2ecc71", "font": {"color": "black"}, "id": "110", "label": "Jiya Thakur (110)", "shape": "dot", "size": 18.5, "title": "\u003cb\u003eJiya Thakur\u003c/b\u003e\u003cbr\u003eReg No: 229308176\u003cbr\u003eSection: B\u003cbr\u003eSkills: NLP, Excel, PyTorch, Python\u003cbr\u003eTarget: Research Associate"}]);
+                  edges = new vis.DataSet([{"from": "175", "title": "Friends (w=5.03)", "to": "70", "value": 5.028035026353343}, {"from": "51", "title": "Friends (w=8.14)", "to": "126", "value": 8.138540517608714}, {"from": "51", "title": "Teammates (w=6.22)", "to": "97", "value": 6.223806084852358}, {"from": "51", "title": "Teammates (w=6.22)", "to": "12", "value": 6.219829831836413}, {"from": "51", "title": "Classmates (w=7.70)", "to": "79", "value": 7.696403061622351}, {"from": "113", "title": "Friends (w=7.00)", "to": "27", "value": 6.998383936528207}, {"from": "113", "title": "Classmates (w=5.49)", "to": "97", "value": 5.494532527865499}, {"from": "102", "title": "Classmates (w=6.09)", "to": "110", "value": 6.0941175320075995}, {"from": "107", "title": "Project Partners (w=4.13)", "to": "133", "value": 4.129421999107414}, {"from": "107", "title": "Best Friends (w=4.86)", "to": "126", "value": 4.860813599975327}, {"from": "107", "title": "Mutuals (w=5.69)", "to": "110", "value": 5.689691520504439}, {"from": "107", "title": "Mutuals (w=6.64)", "to": "163", "value": 6.642572516738113}, {"from": "107", "title": "Friends (w=5.00)", "to": "179", "value": 5.0}, {"from": "107", "title": "Teammates (w=5.79)", "to": "172", "value": 5.787593008708557}, {"from": "133", "title": "Mutuals (w=5.80)", "to": "121", "value": 5.798902915312248}, {"from": "133", "title": "Classmates (w=5.36)", "to": "171", "value": 5.364876097405702}, {"from": "133", "title": "Friends (w=6.73)", "to": "161", "value": 6.733264792648581}, {"from": "13", "title": "Teammates (w=5.30)", "to": "154", "value": 5.296439780686436}, {"from": "13", "title": "Mutuals (w=4.15)", "to": "166", "value": 4.151589873434533}, {"from": "13", "title": "Friends (w=6.54)", "to": "168", "value": 6.54380159579827}, {"from": "30", "title": "Teammates (w=5.56)", "to": "168", "value": 5.556327833576577}, {"from": "116", "title": "Classmates (w=4.89)", "to": "2", "value": 4.892434616598295}, {"from": "116", "title": "Teammates (w=5.25)", "to": "12", "value": 5.2477608802913815}, {"from": "170", "title": "Mutuals (w=5.59)", "to": "79", "value": 5.593034400095208}, {"from": "170", "title": "Mutuals (w=4.96)", "to": "161", "value": 4.959655406846184}, {"from": "170", "title": "Project Partners (w=6.22)", "to": "166", "value": 6.221918114889045}, {"from": "8", "title": "Project Partners (w=5.36)", "to": "145", "value": 5.362232258218226}, {"from": "43", "title": "Teammates (w=6.55)", "to": "53", "value": 6.547871468164741}, {"from": "43", "title": "Project Partners (w=6.60)", "to": "38", "value": 6.600466995601031}, {"from": "43", "title": "Classmates (w=6.02)", "to": "109", "value": 6.015624731440802}, {"from": "43", "title": "Classmates (w=3.50)", "to": "80", "value": 3.5}, {"from": "43", "title": "Friends (w=4.02)", "to": "179", "value": 4.021653836645408}, {"from": "179", "title": "Project Partners (w=4.70)", "to": "161", "value": 4.702114321279919}, {"from": "88", "title": "Best Friends (w=6.46)", "to": "12", "value": 6.459024825323054}, {"from": "97", "title": "Teammates (w=6.30)", "to": "32", "value": 6.298551707589368}, {"from": "97", "title": "Best Friends (w=5.53)", "to": "166", "value": 5.526465855674139}, {"from": "97", "title": "Project Partners (w=6.06)", "to": "109", "value": 6.059286383631797}, {"from": "166", "title": "Mutuals (w=5.46)", "to": "154", "value": 5.463841848771505}, {"from": "166", "title": "Mutuals (w=5.82)", "to": "167", "value": 5.818755060133763}, {"from": "166", "title": "Friends (w=7.16)", "to": "32", "value": 7.1563720212523245}, {"from": "12", "title": "Mutuals (w=6.32)", "to": "127", "value": 6.3184778070862615}, {"from": "12", "title": "Friends (w=5.63)", "to": "70", "value": 5.630138856371141}, {"from": "12", "title": "Best Friends (w=5.02)", "to": "38", "value": 5.020734451602793}, {"from": "78", "title": "Best Friends (w=5.99)", "to": "53", "value": 5.988911217477794}, {"from": "168", "title": "Mutuals (w=6.81)", "to": "161", "value": 6.812714546932138}, {"from": "154", "title": "Friends (w=6.34)", "to": "126", "value": 6.3368942917528805}, {"from": "127", "title": "Teammates (w=7.01)", "to": "109", "value": 7.009648431488358}, {"from": "127", "title": "Classmates (w=5.41)", "to": "27", "value": 5.410419313715772}, {"from": "79", "title": "Best Friends (w=4.56)", "to": "110", "value": 4.563202934786996}, {"from": "161", "title": "Project Partners (w=5.06)", "to": "172", "value": 5.057764196304088}, {"from": "38", "title": "Mutuals (w=4.67)", "to": "110", "value": 4.673959547032091}, {"from": "53", "title": "Classmates (w=7.33)", "to": "169", "value": 7.334798646094829}, {"from": "169", "title": "Project Partners (w=5.95)", "to": "27", "value": 5.953700560858919}, {"from": "18", "title": "Friends (w=5.64)", "to": "70", "value": 5.64388022187977}, {"from": "18", "title": "Mutuals (w=5.81)", "to": "109", "value": 5.806083322826016}, {"from": "172", "title": "Best Friends (w=5.68)", "to": "171", "value": 5.678790164862391}, {"from": "167", "title": "Teammates (w=7.01)", "to": "163", "value": 7.00628159400592}, {"from": "167", "title": "Project Partners (w=4.84)", "to": "109", "value": 4.844934180650095}, {"from": "126", "title": "Classmates (w=5.25)", "to": "110", "value": 5.251341901034561}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "barnesHut": {
+            "avoidOverlap": 0,
+            "centralGravity": 0.3,
+            "damping": 0.28,
+            "gravitationalConstant": -25000,
+            "springConstant": 0.02,
+            "springLength": 180
+        },
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>
